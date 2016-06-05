@@ -1,0 +1,73 @@
+.logotipo{
+	padding: 10px;
+	margin-right: 20px;
+}
+
+.logotipo img{
+	height: 30px;
+}
+
+.perfil{
+	padding: 10px;
+	width: 300px;
+}
+
+.perfil li:first-child{
+	font-size: 1.3em;
+	font-weight: bold;
+	margin-bottom: 1px;
+}
+
+.cabecalho h1{
+	font-size: 3em;
+	margin: 0px;
+}
+
+.busca{
+	margin-top: 12px;
+}
+
+.dados-ord-servico{
+	margin-top: 30px;
+}
+
+.glyphicon-trash{
+	margin-left: 6px;
+	margin-right: -12px;
+}
+
+.glyphicon-pencil{
+	margin-left: 4px;
+	margin-right: 4px;
+}
+
+.glyphicon-ok{
+	margin-right: 8px;
+	margin-left: -15px;
+}
+.centralizar-status{
+	margin-left: 50px;
+	margin-right: -50px;
+}
+
+.paginacao .pagination{
+	margin:0px;
+}
+
+@media(max-width: 767px){
+	.perfil{
+		color: #FFF;
+	}
+
+	.perfil a {
+		color: #9d9d9d;
+		display: block;
+		padding: 5px;
+	}
+
+	.perfil a:hover {
+		/*hover é para quando passar o mouse sobre o elemento, fazer alguma ação*/
+		text-decoration: none;
+		color: #FFF;
+	}
+}

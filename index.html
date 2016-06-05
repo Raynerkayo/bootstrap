@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Página inicial</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+  	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+	<nav class="navbar navbar-inverse navbar-static-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="index.html" class="navbar-brand logotipo">
+					<img src="img/watchguru.png" alt="Watch Guru">
+				</a>
+			</div>
+			<div class="collapse navbar-collapse" id="menu">
+				<ul class="nav navbar-nav">
+					<li><a href="#">Ordens de Serviços</a></li>
+					<li><a href="#">Clientes</a></li>
+					<li><a href="#">Funcionários</a></li>
+					<li><a href="#">Serviços</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Minha conta
+							<span class="caret"></span>
+						</a>
+						<div class="dropdown-menu perfil">
+							<div class="col-sm-4 hidden-xs"><!--sumir a imagem quando for em resolução xs-->
+								<img class="img-responsive img-circle" src="http://api.adorable.io/avatars/100/watchuru.png"/>
+							</div>
+							<ul class="list-unstyled col-sm-8">
+								<li>Fulano</li>
+								<li><a href="">Alterar Perfil</a></li>
+								<li><a href="">Sair</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+		<ol class="breadcrumb">
+			<li><a href="">Início</a></li>
+			<li><a href="">Ordens de Serviço</a></li>
+			<li class="active">Pesquisa</li>
+		</ol>
+
+		<div class="row cabecalho">
+			<div class="col-xs-12 col-md-6">
+				<h1>Ordens de Serviço</h1>
+			</div>
+			<div class="col-xs-12 col-md-4 col-md-offset-2 busca">
+				<div class="input-group">
+					<input type="text" name="busca" class="form-control" placeholder="Pesquisar nome do cliente"/>
+					<span class="input-group-btn">
+						<button type="butto" class="btn btn-default">
+							<span class="glyphicon glyphicon-search"></span>
+						</button>
+					</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="table-responsive">
+			<table class="dados-ord-servico table table-bordered table-striped table-hover">
+				<thead>
+					<tr>
+						<th>Código</th>
+						<th>Data</th>
+						<th>Cliente</th>
+						<th>Valor</th>
+						<th>Funcionário</th>
+						<th>Status</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>5145</td>
+						<td>10/10/2016</td>
+						<td>Francisberto</td>
+						<td>100,00</td>
+						<td>Valdisnei</td>
+						<td><span class="label label-primary centralizar-status">Em andamento</span></td>
+						<td class="text-center">
+							<a href="" title="Finalizar" data-toggle="tooltip"><span class="glyphicon glyphicon-ok text-success"></span></a>
+							<a href="" title="Editar" data-toggle="tooltip"><span class="glyphicon glyphicon-pencil text-warning"></span></a>
+							<a href="" title="Excluir" data-toggle="tooltip"><span class="glyphicon glyphicon-trash text-danger"></span></a>
+						</td>
+					</tr>
+					<tr>
+						<td>5145</td>
+						<td>10/10/2016</td>
+						<td>Francisberto</td>
+						<td>100,00</td>
+						<td>Valdisnei</td>
+						<td><span class="label label-default centralizar-status">Em andamento</span></td>
+						<td class="text-center">
+							<a href="" title="Finalizar" data-toggle="tooltip"><span class="glyphicon glyphicon-ok text-success"></span></a>
+							<a href="" title="Editar" data-toggle="tooltip"><span class="glyphicon glyphicon-pencil text-warning"></span></a>
+							<a href="" title="Excluir" data-toggle="tooltip"><span class="glyphicon glyphicon-trash text-danger"></span></a>
+						</td>
+					</tr>
+					<tr>
+						<td>5145</td>
+						<td>10/10/2016</td>
+						<td>Francisberto</td>
+						<td>100,00</td>
+						<td>Valdisnei</td>
+						<td><span class="label label-warning centralizar-status">Em andamento</span></td>
+						<td class="text-center">
+							<a href="" title="Finalizar" data-toggle="tooltip"><span class="glyphicon glyphicon-ok text-success"></span></a>
+							<a href="" title="Editar" data-toggle="tooltip"><span class="glyphicon glyphicon-pencil text-warning"></span></a>
+							<a href="" title="Excluir" data-toggle="tooltip"><span class="glyphicon glyphicon-trash text-danger"></span></a>
+						</td>
+					</tr>
+					<tr>
+						<td>5145</td>
+						<td>10/10/2016</td>
+						<td>Francisberto</td>
+						<td>100,00</td>
+						<td>Valdisnei</td>
+						<td><span class="label label-success centralizar-status">Em andamento</span></td>
+						<td class="text-center">
+							<a href="" title="Finalizar" data-toggle="tooltip"><span class="glyphicon glyphicon-ok text-success"></span></a>
+							<a href="" title="Editar" data-toggle="tooltip"><span class="glyphicon glyphicon-pencil text-warning"></span></a>
+							<a href="" title="Excluir" data-toggle="tooltip"><span class="glyphicon glyphicon-trash text-danger"></span></a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<footer class="row">
+			<div class="col-sm-6">
+				<button class="btn btn-primary" data-toggle="modal" data-target="#novaOs">Nova ordem de serviço</button>
+			</div>
+			<div class="col-sm-6 paginacao text-right">
+				<ul class="pagination">
+					<li class="disabled"><a href=""><span><<</span></a></li>
+					<li class="active"><a href="">1</a></li>
+					<li><a href="">2</a></li>
+					<li><a href="">3</a></li>
+					<li><a href="">4</a></li>
+					<li><a href="">5</a></li>
+					<li><a href=""><span>>></span></a></li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+
+	<div class="modal fade" id="novaOs">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" data-dismiss="modal" class="close">
+						<span>&times;</span>
+					</button>
+					<h4 class="modal-title">Nova Ordem de Serviço</h4>
+				</div>
+				<form>
+					<div class="modal-body">
+
+						<div class="alert alert-info">
+							Aqui são as validações! Se liga aí! <b>Negrito</b> <s>Sublinha</s>
+							<button type="button" data-dismiss="alert" class="close">
+							<span>&times;</span>
+							</button>
+						</div>
+
+						<div class="row">
+							<div class="form-group col-xs-12">
+								<label>Código da OS</label>
+								<p class="form-control-static">6514</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group col-sm-5">
+								<label class="control-label" for="cliente">Cliente</label>
+								<select id="cliente" class="form-control">
+									<option value="">Selecione...</option>
+									<option value="1">João</option>
+									<option value="2">Maria</option>
+									<option value="3">Mariana</option>
+									<option value="4">Mar</option>
+									<option value="5">Mari</option>
+								</select>
+							</div>
+							<div class="form-group col-sm-7 has-warning">
+								<label class="control-label" for="servicos">Serviços</label>
+								<select id="servicos" class="form-control">
+									<option value="">Selecione...</option>
+									<option value="1">Concertar</option>
+									<option value="2">Ajustar Data e Hora</option>
+									<option value="3">Concertar vidro</option>
+									<option value="4">Trocar pulseira</option>
+									<option value="5">Diminuir pulseira</option>
+								</select>
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group has-error col-xs-12"><!--has-error mostrar erro-->
+								<label class="control-label" for="obervacao">Observação</label>
+								<textarea id="observacao" class="form-control" rows="3"></textarea>
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group has-success col-sm-4">
+								<label class="control-label" for="valor"></label>
+								<div class="input-group">
+									<div class="input-group-addon">R$</div>
+									<input type="text" name="valor" id="valor" class="form-control" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="reset" class="btn btn-danger">Limpar</button>
+						<button type="submit" class="btn btn-primary">Salvar</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!--jQuery deve ser chamado antes do bootstrap, pois jQuery é um pré-requisito para o Bootstrap.-->
+	<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

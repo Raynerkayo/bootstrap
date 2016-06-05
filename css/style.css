@@ -1,0 +1,38 @@
+body{
+	font-size: 18px;
+	background-color: #F5F5F5;
+}
+
+article{
+	width: 80%;
+	margin: 20px auto;
+}
+
+article header h1{
+	font-size: 14px;
+	text-transform: capitalize;
+	/*
+	capitalize é para deixar a primeira letra sempre maíscula.
+	*/
+}
+
+article .conteudo{
+	columns: 3;
+	column-gap: 40px;/*espaçamento entre colunas*/
+	text-align: justify;
+}
+
+article .conteudo p{
+	margin: 0 0 20px 0; /*cima, direita, baixo, esquerda*/
+}
+
+article .conteudo p:first-child:first-letter{
+	font-size: 50px;
+	font-weight: bold; /*ficar em negrito*/
+}
+
+@media(max-width: 767px;){
+	article header h1{
+		font-size: 28px;
+	}
+}
